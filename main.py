@@ -40,8 +40,8 @@ credit ="𝙎𝘼𝙄𝙉𝙄 𝘽𝙊𝙏𝙎"
 # Initialize the bot
 bot = Client(
     "bot",
-    api_id=27900743,
-    api_hash=ebb06ea8d41420e60b29140dcee902fc,
+    api_id=API_ID,
+    api_hash=API_HASH,
     bot_token=BOT_TOKEN
 )
 
