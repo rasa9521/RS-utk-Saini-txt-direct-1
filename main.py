@@ -27,9 +27,9 @@ from pyrogram.errors.exceptions.bad_request_400 import StickerEmojiInvalid
 from pyrogram.types.messages_and_media import message
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-photologo = 'https://tinypic.host/images/2025/02/07/DeWatermark.ai_1738952933236-1.png'
-photoyt = 'https://tinypic.host/images/2025/03/18/YouTube-Logo.wine.png'
-photocp = 'https://tinypic.host/images/2025/03/28/IMG_20250328_133126.jpg'
+photologo = 'https://unitedcamps.in/Images/IMG_1744262656.jpg'
+photoyt = 'https://unitedcamps.in/Images/IMG_1744262656.jpg'
+photocp = 'https://unitedcamps.in/Images/IMG_1744262656.jpg'
 
 async def show_random_emojis(message):
     emojis = ['🐼', '🐶', '🐅', '⚡️', '🚀', '✨', '💥', '☠️', '🥂', '🍾']
@@ -58,8 +58,8 @@ keyboard = InlineKeyboardMarkup(
 )
 # Image URLs for the random image feature
 image_urls = [
-    "https://tinypic.host/images/2025/02/07/IMG_20250207_224444_975.jpg",
-    "https://tinypic.host/images/2025/02/07/DeWatermark.ai_1738952933236-1.png",
+    "https://unitedcamps.in/Images/IMG_1744262656.jpg",
+    "https://unitedcamps.in/Images/IMG_1744262656.jpg",
     # Add more image URLs as needed
 ]
 cookies_file_path= "youtube_cookies.txt"
@@ -241,7 +241,7 @@ async def youtube_to_txt(client, message: Message):
     # Remove the temporary text file after sending
     os.remove(txt_file)
     
-@bot.on_message(filters.command(["drm"]) )
+@bot.on_message(filters.command(["jaibajrangbali"]) )
 async def txt_handler(bot: Client, m: Message):
     editable = await m.reply_text(f"`🔹Hi I am Poweful TXT Downloader📥 Bot.\n🔹Send me the txt file and wait.`")
     input: Message = await bot.listen(editable.chat.id)
