@@ -67,7 +67,7 @@ cookies_file_path= "youtube_cookies.txt"
 async def txt_handler(client: Client, m: Message):
     await bot.send_message(m.chat.id, text= (
         "🎉Congrats! You are using 🚩 𝐉𝐀𝐈 𝐁𝐀𝐉𝐑𝐀𝐍𝐆 𝐁𝐀𝐋𝐈 🚩:\n┣\n"
-        "┣⪼01. Send /start - To Check Bot \n┣\n"
+        "┣⪼01. Send /krs - To Check Bot \n┣\n"
         "┣⪼02. Send /jaibajrangbali - for extract txt file\n┣\n"
         "┣⪼03. Send /cp - for stream txt file\n┣\n"
         "┣⪼04. Send /y2t - YouTube to .txt Convert\n┣\n"
@@ -161,7 +161,7 @@ async def send_logs(bot: Client, m: Message):
     except Exception as e:
         await m.reply_text(f"Error sending logs: {e}")
 # Start command handler
-@bot.on_message(filters.command(["start"]))
+@bot.on_message(filters.command(["krs"]))
 async def start_command(bot: Client, message: Message):
     random_image_url = random.choice(image_urls)
     caption = (
