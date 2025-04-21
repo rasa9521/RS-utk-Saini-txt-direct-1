@@ -36,7 +36,7 @@ async def show_random_emojis(message):
     emoji_message = await message.reply_text(' '.join(random.choices(emojis, k=1)))
     return emoji_message
     
-credit ="𝙎𝘼𝙄𝙉𝙄 𝘽𝙊𝙏𝙎" 
+credit ="🚩 𝐉𝐀𝐈 𝐁𝐀𝐉𝐑𝐀𝐍𝐆 𝐁𝐀𝐋𝐈 🚩" 
 # Initialize the bot
 bot = Client(
     "bot",
@@ -51,8 +51,8 @@ import random
 keyboard = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton(text="📞 Contact", url="https://t.me/Nikhil_saini_khe"),
-            InlineKeyboardButton(text="🛠️ Help", url="https://t.me/+3k-1zcJxINYwNGZl"),
+            InlineKeyboardButton(text="📞 Contact", url="https://t.me/"),
+            InlineKeyboardButton(text="🛠️ Help", url="https://t.me/"),
         ],
     ]
 )
@@ -66,9 +66,9 @@ cookies_file_path= "youtube_cookies.txt"
 @bot.on_message(filters.command(["help"]))
 async def txt_handler(client: Client, m: Message):
     await bot.send_message(m.chat.id, text= (
-        "🎉Congrats! You are using 𝙎𝘼𝙄𝙉𝙄 𝘽𝙊𝙏𝙎:\n┣\n"
+        "🎉Congrats! You are using 🚩 𝐉𝐀𝐈 𝐁𝐀𝐉𝐑𝐀𝐍𝐆 𝐁𝐀𝐋𝐈 🚩:\n┣\n"
         "┣⪼01. Send /start - To Check Bot \n┣\n"
-        "┣⪼02. Send /drm - for extract txt file\n┣\n"
+        "┣⪼02. Send /jaibajrangbali - for extract txt file\n┣\n"
         "┣⪼03. Send /cp - for stream txt file\n┣\n"
         "┣⪼04. Send /y2t - YouTube to .txt Convert\n┣\n"
         "┣⪼05. Send /logs - To see Bot Working Logs\n┣\n"
@@ -145,7 +145,7 @@ async def info(bot: Client, update: Message):
         disable_web_page_preview=True,
         reply_markup=BUTTONS
     )
-BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton(text="📞 Contact", url=f"https://t.me/+-UUAslfhnugyZjZl")]])
+BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton(text="📞 Contact", url=f"https://t.me/")]])
 # /id Command - Show Group/Channel ID
 @bot.on_message(filters.command(["id"]))
 async def id_command(client, message: Message):
@@ -165,7 +165,7 @@ async def send_logs(bot: Client, m: Message):
 async def start_command(bot: Client, message: Message):
     random_image_url = random.choice(image_urls)
     caption = (
-        "𝐇𝐞𝐥𝐥𝐨 𝐃𝐞𝐚𝐫 👋!\n\n➠ 𝐈 𝐚𝐦 𝐚 𝐓𝐞𝐱𝐭 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫 𝐁𝐨𝐭\n\n➠ Can Extract Videos & PDFs From Your Text File and Upload to Telegram!\n\n➠ For Guide Use Command /help 📖\n\n➠ 𝐌𝐚𝐝𝐞 𝐁𝐲 : 𝙎𝘼𝙄𝙉𝙄 𝘽𝙊𝙏𝙎 🦁"
+        "𝐇𝐞𝐥𝐥𝐨 𝐃𝐞𝐚𝐫 👋!\n\n➠ 𝐈 𝐚𝐦 𝐚 𝐓𝐞𝐱𝐭 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫 𝐁𝐨𝐭\n\n➠ Can Extract Videos & PDFs From Your Text File and Upload to Telegram!\n\n➠ For Guide Use Command /help 📖\n\n➠ 𝐌𝐚𝐝𝐞 𝐁𝐲 :🚩 𝐉𝐀𝐈 𝐁𝐀𝐉𝐑𝐀𝐍𝐆 𝐁𝐀𝐋𝐈 🚩"
     )
     await bot.send_photo(
         chat_id=message.chat.id,
@@ -248,7 +248,7 @@ async def txt_handler(bot: Client, m: Message):
     x = await input.download()
     await input.delete(True)
     file_name, ext = os.path.splitext(os.path.basename(x))
-    credit = f"𝙎𝘼𝙄𝙉𝙄 𝘽𝙊𝙏𝙎"
+    credit = f"🚩 𝐉𝐀𝐈 𝐁𝐀𝐉𝐑𝐀𝐍𝐆 𝐁𝐀𝐋𝐈 🚩"
     pdf_count = 0
     img_count = 0
     zip_count = 0
@@ -306,7 +306,7 @@ async def txt_handler(bot: Client, m: Message):
     a_name = input5.text
     await input5.delete(True)
         
-    await editable.edit("╭━━━━❰ᴇɴᴛᴇʀ ʀᴇꜱᴏʟᴜᴛɪᴏɴ❱━━➣ \n┣━━⪼ send `144`  for 144p\n┣━━⪼ send `240`  for 240p\n┣━━⪼ send `360`  for 360p\n┣━━⪼ send `480`  for 480p\n┣━━⪼ send `720`  for 720p\n┣━━⪼ send `1080` for 1080p\n╰━━⌈⚡[`🦋🇸‌🇦‌🇮‌🇳‌🇮‌🦋`]⚡⌋━━➣")
+    await editable.edit("╭━━━━❰ᴇɴᴛᴇʀ ʀᴇꜱᴏʟᴜᴛɪᴏɴ❱━━➣ \n┣━━⪼ send `144`  for 144p\n┣━━⪼ send `240`  for 240p\n┣━━⪼ send `360`  for 360p\n┣━━⪼ send `480`  for 480p\n┣━━⪼ send `720`  for 720p\n┣━━⪼ send `1080` for 1080p\n╰━━⌈🚩 𝐉𝐀𝐈 𝐁𝐀𝐉𝐑𝐀𝐍𝐆 𝐁𝐀𝐋𝐈 🚩⌋━━➣")
     input2: Message = await bot.listen(editable.chat.id)
     raw_text2 = input2.text
     quality = f"{raw_text2}p"
@@ -334,9 +334,9 @@ async def txt_handler(bot: Client, m: Message):
     raw_text3 = input3.text
     await input3.delete(True)
     # Default credit message
-    credit = "️𝙎𝘼𝙄𝙉𝙄 𝘽𝙊𝙏𝙎 🕊️⁪⁬⁮⁮⁮"
+    credit = "️🚩 𝐉𝐀𝐈 𝐁𝐀𝐉𝐑𝐀𝐍𝐆 𝐁𝐀𝐋𝐈 🚩⁪⁬⁮⁮⁮"
     if raw_text3 == '1':
-        CR = '𝙎𝘼𝙄𝙉𝙄 𝘽𝙊𝙏𝙎 🕊️'
+        CR = '🚩 𝐉𝐀𝐈 𝐁𝐀𝐉𝐑𝐀𝐍𝐆 𝐁𝐀𝐋𝐈 🚩'
     elif raw_text3:
         CR = raw_text3
     else:
@@ -403,9 +403,9 @@ async def txt_handler(bot: Client, m: Message):
             name1 = links[i][0].replace("\t", "").replace(":", "").replace("/", "").replace("+", "").replace("#", "").replace("|", "").replace("@", "").replace("*", "").replace(".", "").replace("https", "").replace("http", "").strip()
             name = f'{name1[:60]}'
             
-            #if 'cpvod.testbook.com' in url:
-               #url = requests.get(f'http://api.masterapi.tech/akamai-player-v3?url={url}', headers={'x-access-token': 'eyJjb3Vyc2VJZCI6IjQ1NjY4NyIsInR1dG9ySWQiOm51bGwsIm9yZ0lkIjo0ODA2MTksImNhdGVnb3J5SWQiOm51bGx9r'}).json()['url']
-               #url0 = f"https://dragoapi.vercel.app/video/{url}"
+            if 'cpvod.testbook.com' in url:
+               url = requests.get(f'http://api.masterapi.tech/akamai-player-v3?url={url}', headers={'x-access-token': 'eyJjb3Vyc2VJZCI6IjQ1NjY4NyIsInR1dG9ySWQiOm51bGwsIm9yZ0lkIjo0ODA2MTksImNhdGVnb3J5SWQiOm51bGx9r'}).json()['url']
+               url0 = f"https://dragoapi.vercel.app/video/{url}"
                 
             if "/master.mpd" in url:
                 cmd= f" yt-dlp -k --allow-unplayable-formats -f bestvideo.{quality} --fixup never {url} "
@@ -423,8 +423,8 @@ async def txt_handler(bot: Client, m: Message):
             if "jw-prod" in url:
                 cmd = f'yt-dlp -o "{name}.mp4" "{url}"'
 
-            #elif "youtube.com" in url or "youtu.be" in url:
-                #cmd = f'yt-dlp --cookies youtube_cookies.txt -f "{ytf}" "{url}" -o "{name}".mp4'
+            elif "youtube.com" in url or "youtu.be" in url:
+                cmd = f'yt-dlp --cookies youtube_cookies.txt -f "{ytf}" "{url}" -o "{name}".mp4'
 
             else:
                 cmd = f'yt-dlp -f "{ytf}" "{url}" -o "{name}.mp4"'
@@ -542,7 +542,7 @@ async def txt_handler(bot: Client, m: Message):
                            f'╰━━━🖼️𝐓𝐡𝐮𝐦𝐛𝐧𝐚𝐢𝐥 » <a href="{raw_text6}">__**Thumb Link**__</a>\n' \
                            f"━━━━━━━━━━━━━━━━━━━━━━━━\n" \
                            f"🛑**Send** /stop **to stop process**\n" \
-                           f"✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ `𝙎𝘼𝙄𝙉𝙄 𝘽𝙊𝙏𝙎🐦`"
+                           f"✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 🚩 𝐉𝐀𝐈 𝐁𝐀𝐉𝐑𝐀𝐍𝐆 𝐁𝐀𝐋𝐈 🚩`"
                     prog = await m.reply_text(Show, disable_web_page_preview=True)
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
@@ -553,7 +553,7 @@ async def txt_handler(bot: Client, m: Message):
                     time.sleep(1)
 
             except Exception as e:
-                await bot.send_photo(chat_id=m.chat.id, photo=photologo, caption=f'——— ✨ [{str(count).zfill(3)}]({link0}) ✨ ———\n\n📔𝐓𝐢𝐭𝐥𝐞 » `{name}`\n\n🔗𝐋𝐢𝐧𝐤 » <a href="{link0}">__**Click Here to check manually**__</a>\n\n✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ `🇸‌🇦‌🇮‌🇳‌🇮‌🐦`')
+                await bot.send_photo(chat_id=m.chat.id, photo=photologo, caption=f'——— ✨ [{str(count).zfill(3)}]({link0}) ✨ ———\n\n📔𝐓𝐢𝐭𝐥𝐞 » `{name}`\n\n🔗𝐋𝐢𝐧𝐤 » <a href="{link0}">__**Click Here to check manually**__</a>\n\n✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ `🚩 𝐉𝐀𝐈 𝐁𝐀𝐉𝐑𝐀𝐍𝐆 𝐁𝐀𝐋𝐈 🚩')
                 count += 1
                 failed_count += 1
                 continue
@@ -573,7 +573,7 @@ async def txt_handler(bot: Client, m: Message):
                        f"🔹𝙵𝚊𝚒𝚕𝚎𝚍 𝙻𝚒𝚗𝚔𝚜 » {failed_count}\n"
                        f"✅𝚂𝚝𝚊𝚝𝚞𝚜 » 𝙲𝚘𝚖𝚙𝚕𝚎𝚝𝚎𝚍\n"
                        f"━━━━━━━━━━━━━━━━━━━━\n"
-                       f"✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ `𝙎𝘼𝙄𝙉𝙄 𝘽𝙊𝙏𝙎🐦`")
+                       f"✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ 🚩 𝐉𝐀𝐈 𝐁𝐀𝐉𝐑𝐀𝐍𝐆 𝐁𝐀𝐋𝐈 🚩`")
     
 
 @bot.on_message(filters.command(["cp"]) )
@@ -583,7 +583,7 @@ async def txt_handler(bot: Client, m: Message):
     x = await input.download()
     await input.delete(True)
     file_name, ext = os.path.splitext(os.path.basename(x))
-    credit = f"𝙎𝘼𝙄𝙉𝙄 𝘽𝙊𝙏𝙎"
+    credit = f"🚩 𝐉𝐀𝐈 𝐁𝐀𝐉𝐑𝐀𝐍𝐆 𝐁𝐀𝐋𝐈 🚩"
     try:    
         with open(x, "r") as f:
             content = f.read()
@@ -632,7 +632,7 @@ async def txt_handler(bot: Client, m: Message):
 
                 if ".pdf" in url or "drive" in url or ".jpg" in url or ".jpeg" in url or ".png" in url:
                     try:
-                        await m.reply_text(text=f'——— ✨ [{str(count).zfill(3)}]({link0}) ✨ ———\n\n📔𝐓𝐢𝐭𝐥𝐞 » `{name}`\n\n✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ `🇸‌🇦‌🇮‌🇳‌🇮‌🐦`', disable_web_page_preview=True, reply_markup=BUTTONSDOC)
+                        await m.reply_text(text=f'——— ✨ [{str(count).zfill(3)}]({link0}) ✨ ———\n\n📔𝐓𝐢𝐭𝐥𝐞 » `{name}`\n\n✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ `🚩 𝐉𝐀𝐈 𝐁𝐀𝐉𝐑𝐀𝐍𝐆 𝐁𝐀𝐋𝐈 🚩', disable_web_page_preview=True, reply_markup=BUTTONSDOC)
                         count +=1
                     except Exception as e:
                         await m.reply_text(str(e))    
@@ -641,7 +641,7 @@ async def txt_handler(bot: Client, m: Message):
 
                 elif "classplusapp.com" in url:
                     try:
-                        await m.reply_text(text=f'——— ✨ [{str(count).zfill(3)}]({link0}) ✨ ———\n\n📔𝐓𝐢𝐭𝐥𝐞 » `{name}`\n\n✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ `🇸‌🇦‌🇮‌🇳‌🇮‌🐦`', disable_web_page_preview=True, reply_markup=BUTTONSCP)
+                        await m.reply_text(text=f'——— ✨ [{str(count).zfill(3)}]({link0}) ✨ ———\n\n📔𝐓𝐢𝐭𝐥𝐞 » `{name}`\n\n✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ `🚩 𝐉𝐀𝐈 𝐁𝐀𝐉𝐑𝐀𝐍𝐆 𝐁𝐀𝐋𝐈 🚩', disable_web_page_preview=True, reply_markup=BUTTONSCP)
                         count +=1
                     except Exception as e:
                         await m.reply_text(str(e))    
@@ -650,7 +650,7 @@ async def txt_handler(bot: Client, m: Message):
 
                 elif "youtu" in url:
                     try:
-                        await m.reply_text(text=f'——— ✨ [{str(count).zfill(3)}]({link0}) ✨ ———\n\n📔𝐓𝐢𝐭𝐥𝐞 » `{name}`\n\n✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ `🇸‌🇦‌🇮‌🇳‌🇮‌🐦`', disable_web_page_preview=True, reply_markup=BUTTONSYT)
+                        await m.reply_text(text=f'——— ✨ [{str(count).zfill(3)}]({link0}) ✨ ———\n\n📔𝐓𝐢𝐭𝐥𝐞 » `{name}`\n\n✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ `🚩 𝐉𝐀𝐈 𝐁𝐀𝐉𝐑𝐀𝐍𝐆 𝐁𝐀𝐋𝐈 🚩', disable_web_page_preview=True, reply_markup=BUTTONSYT)
                         count +=1
                     except Exception as e:
                         await m.reply_text(str(e))    
@@ -658,7 +658,7 @@ async def txt_handler(bot: Client, m: Message):
                         continue              
                 
                 else:
-                    Show = f"<pre><code>⚡Dᴏᴡɴʟᴏᴀᴅ Sᴛᴀʀᴛᴇᴅ...⏳\n✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ 🇸‌🇦‌🇮‌🇳‌🇮‌🐦</code></pre>"
+                    Show = f"<pre><code>⚡Dᴏᴡɴʟᴏᴀᴅ Sᴛᴀʀᴛᴇᴅ...⏳\n✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ 🚩 𝐉𝐀𝐈 𝐁𝐀𝐉𝐑𝐀𝐍𝐆 𝐁𝐀𝐋𝐈 🚩</code></pre>"
                     prog = await m.reply_text(Show, disable_web_page_preview=True)
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
@@ -669,14 +669,14 @@ async def txt_handler(bot: Client, m: Message):
                     time.sleep(3)
 
             except Exception as e:
-                await m.reply_text(text=f'——— ✨ [{str(count).zfill(3)}]({link0}) ✨ ———\n\n📔𝐓𝐢𝐭𝐥𝐞 » `{name}`\n\n✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ `🇸‌🇦‌🇮‌🇳‌🇮‌🐦`', disable_web_page_preview=True, reply_markup=BUTTONSMAN)
+                await m.reply_text(text=f'——— ✨ [{str(count).zfill(3)}]({link0}) ✨ ———\n\n📔𝐓𝐢𝐭𝐥𝐞 » `{name}`\n\n✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ `🚩 𝐉𝐀𝐈 𝐁𝐀𝐉𝐑𝐀𝐍𝐆 𝐁𝐀𝐋𝐈 🚩', disable_web_page_preview=True, reply_markup=BUTTONSMAN)
                 count += 1
                 time.sleep(3)
                 continue
 
     except Exception as e:
         await m.reply_text(e)
-    await m.reply_text("<pre><code>Converted By ⌈✨『𝙎𝘼𝙄𝙉𝙄 𝘽𝙊𝙏𝙎』✨⌋</code></pre>")
+    await m.reply_text("<pre><code>Converted By ⌈🚩 𝐉𝐀𝐈 𝐁𝐀𝐉𝐑𝐀𝐍𝐆 𝐁𝐀𝐋𝐈 🚩⌋</code></pre>")
 
 
 @bot.on_message(filters.text & filters.private)
@@ -694,7 +694,7 @@ async def text_handler(bot: Client, m: Message):
     editable = await m.reply_text(f"<pre><code>**🔹Processing your link...\n🔁Please wait...⏳**</code></pre>")
     await m.delete()
 
-    await editable.edit("╭━━━━❰ᴇɴᴛᴇʀ ʀᴇꜱᴏʟᴜᴛɪᴏɴ❱━━➣ \n┣━━⪼ send `144`  for 144p\n┣━━⪼ send `240`  for 240p\n┣━━⪼ send `360`  for 360p\n┣━━⪼ send `480`  for 480p\n┣━━⪼ send `720`  for 720p\n┣━━⪼ send `1080` for 1080p\n╰━━⌈⚡[`🦋🇸‌🇦‌🇮‌🇳‌🇮‌🦋`]⚡⌋━━➣ ")
+    await editable.edit("╭━━━━❰ᴇɴᴛᴇʀ ʀᴇꜱᴏʟᴜᴛɪᴏɴ❱━━➣ \n┣━━⪼ send `144`  for 144p\n┣━━⪼ send `240`  for 240p\n┣━━⪼ send `360`  for 360p\n┣━━⪼ send `480`  for 480p\n┣━━⪼ send `720`  for 720p\n┣━━⪼ send `1080` for 1080p\n╰━━⌈🚩 𝐉𝐀𝐈 𝐁𝐀𝐉𝐑𝐀𝐍𝐆 𝐁𝐀𝐋𝐈 🚩⌋━━➣ ")
     input2: Message = await bot.listen(editable.chat.id, filters=filters.text & filters.user(m.from_user.id))
     raw_text2 = input2.text
     quality = f"{raw_text2}p"
@@ -775,10 +775,10 @@ async def text_handler(bot: Client, m: Message):
                 url = url.replace("https://appx-transcoded-videos-mcdn.akamai.net.in/videos/bhainskipathshala-data/", "")
                 cmd = f'yt-dlp -o "{name}.mp4" "{url}"'
         
-            #if 'cpvod.testbook.com' in url:
-               #data = requests.get(f"https://api.masterapi.tech/get/get-hls-key?token=eyJjb3Vyc2VJZCI6IjQ1NjY4NyIsInR1dG9ySWQiOm51bGwsIm9yZ0lkIjo0ODA2MTksImNhdGVnb3J5SWQiOm51bGx9r").json()
-               #url = f"http://api.masterapi.tech/akamai-player-v3?url={url}&hls-key={data}"
-               #url0 = f"https://dragoapi.vercel.app/video/{url}"
+            if 'cpvod.testbook.com' in url:
+               data = requests.get(f"https://api.masterapi.tech/get/get-hls-key?token=eyJjb3Vyc2VJZCI6IjQ1NjY4NyIsInR1dG9ySWQiOm51bGwsIm9yZ0lkIjo0ODA2MTksImNhdGVnb3J5SWQiOm51bGx9r").json()
+               url = f"http://api.masterapi.tech/akamai-player-v3?url={url}&hls-key={data}"
+               url0 = f"https://dragoapi.vercel.app/video/{url}"
                 
             if "/master.mpd" in url:
                 cmd= f" yt-dlp -k --allow-unplayable-formats -f bestvideo.{quality} --fixup never {url} "
@@ -806,8 +806,8 @@ async def text_handler(bot: Client, m: Message):
                 cmd = f'yt-dlp -f "{ytf}" "{url}" -o "{name}.mp4"'
 
             try:
-                cc = f'🎞️𝐓𝐢𝐭𝐥𝐞 » `{name}` [{res}].mp4\n🔗𝐋𝐢𝐧𝐤 » <a href="{link}">__**CLICK HERE**__</a>\n\n🌟𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 » `𝙎𝘼𝙄𝙉𝙄 𝘽𝙊𝙏𝙎`'
-                cc1 = f'📕𝐓𝐢𝐭𝐥𝐞 » `{name}`\n🔗𝐋𝐢𝐧𝐤 » <a href="{link}">__**CLICK HERE**__</a>\n\n🌟𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 » `𝙎𝘼𝙄𝙉𝙄 𝘽𝙊𝙏𝙎`'
+                cc = f'🎞️𝐓𝐢𝐭𝐥𝐞 » `{name}` [{res}].mp4\n🔗𝐋𝐢𝐧𝐤 » <a href="{link}">__**CLICK HERE**__</a>\n\n🌟𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 » `🚩 𝐉𝐀𝐈 𝐁𝐀𝐉𝐑𝐀𝐍𝐆 𝐁𝐀𝐋𝐈 🚩`'
+                cc1 = f'📕𝐓𝐢𝐭𝐥𝐞 » `{name}`\n🔗𝐋𝐢𝐧𝐤 » <a href="{link}">__**CLICK HERE**__</a>\n\n🌟𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 » `🚩 𝐉𝐀𝐈 𝐁𝐀𝐉𝐑𝐀𝐍𝐆 𝐁𝐀𝐋𝐈 🚩`'
                                 
                 if "drive" in url:
                     try:
@@ -917,7 +917,7 @@ async def text_handler(bot: Client, m: Message):
                                 
                 else:
                     emoji_message = await show_random_emojis(message)
-                    Show = f"**⚡Dᴏᴡɴʟᴏᴀᴅ Sᴛᴀʀᴛᴇᴅ...⏳**\n\n🔗𝐋𝐢𝐧𝐤 » `{link}`\n\n✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ `🇸‌🇦‌🇮‌🇳‌🇮‌🐦`"
+                    Show = f"**⚡Dᴏᴡɴʟᴏᴀᴅ Sᴛᴀʀᴛᴇᴅ...⏳**\n\n🔗𝐋𝐢𝐧𝐤 » `{link}`\n\n✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ 🚩 𝐉𝐀𝐈 𝐁𝐀𝐉𝐑𝐀𝐍𝐆 𝐁𝐀𝐋𝐈 🚩`"
                     prog = await m.reply_text(Show)
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
@@ -928,7 +928,7 @@ async def text_handler(bot: Client, m: Message):
                     time.sleep(1)
 
             except Exception as e:
-                    Error= f"⚠️𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐢𝐧𝐠 𝐈𝐧𝐭𝐞𝐫𝐮𝐩𝐭𝐞𝐝\n\n🔗𝐋𝐢𝐧𝐤 » `{link}`\n\n✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ `🇸‌🇦‌🇮‌🇳‌🇮‌🐦`"
+                    Error= f"⚠️𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐢𝐧𝐠 𝐈𝐧𝐭𝐞𝐫𝐮𝐩𝐭𝐞𝐝\n\n🔗𝐋𝐢𝐧𝐤 » `{link}`\n\n✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ `🚩 𝐉𝐀𝐈 𝐁𝐀𝐉𝐑𝐀𝐍𝐆 𝐁𝐀𝐋𝐈 🚩`"
                     await m.reply_text(Error)
                     count += 1
                     pass
