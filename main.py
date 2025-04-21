@@ -175,7 +175,7 @@ async def start_command(bot: Client, message: Message):
     )
 @bot.on_message(filters.command(["stop"]) )
 async def restart_handler(_, m):
-    await m.reply_text("**ˢᵗᵒᵖᵖᵉᵈ ᵇᵃᵇʸ**", True)
+    await m.reply_text("**ˢᵗᵒᵖᵖᵉᵈ yaar**", True)
     os.execl(sys.executable, sys.executable, *sys.argv)
 
 @bot.on_message(filters.command(["y2t"]))
